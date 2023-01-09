@@ -1,0 +1,86 @@
+body{
+  /* background-color: rgb(29, 27, 27); */
+  background-color: #200f21;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 405px;
+  box-shadow: 5px 5px 5px 5px #0a000f ;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product {
+  display: flex;
+  align-items: center;
+}
+.product h1 {
+  font-size: 20px;
+  /* color: rgb(6, 114, 167); */
+  color: #231f2c;
+}
+textarea {
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 20px;
+}
+textarea:focus{
+  box-shadow: 0 0 5px 1px #171717;
+}
+button {
+  /* background: rgb(6, 114, 167); */
+  background-color: #352f44;
+  color: #fff;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 0;
+  border: none;
+  font-weight: bolder;
+   cursor: pointer;
+}
+
+@media(max-width:768px){
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  textarea {
+    width: 100%;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 20px;
+  }
+}
